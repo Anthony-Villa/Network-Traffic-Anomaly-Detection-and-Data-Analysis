@@ -22,3 +22,11 @@ print(cleaned_data.info())
 
 # Show top values in a column to vualize potential anomalies
 print(cleaned_data['attack_detected'].value_counts())
+
+# Create attack distribution chart
+cleaned_data['attack_detected'].value_counts().plot(kind='bar')
+
+plt.title('Attack Detection Distribution')
+plt.xlabel('Attack Detected')
+plt.ylabel('Count')
+plt.show()
