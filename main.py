@@ -15,3 +15,7 @@ print(data.describe())
 
 # Check for missing values
 print(data.isnull().sum())
+
+# Remove rows with missing values
+cleaned_data = data.dropna()
+print(cleaned_data.info())
