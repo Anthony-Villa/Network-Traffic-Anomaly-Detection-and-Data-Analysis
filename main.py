@@ -19,3 +19,6 @@ print(data.isnull().sum())
 # Remove rows with missing values
 cleaned_data = data.dropna()
 print(cleaned_data.info())
+
+# Show top values in a column to vualize potential anomalies
+print(cleaned_data['attack_detected'].value_counts())
