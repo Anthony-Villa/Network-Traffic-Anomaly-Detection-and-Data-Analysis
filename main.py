@@ -12,3 +12,6 @@ print(data.info())
 
 # Show statistical summary
 print(data.describe())
+
+# Check for missing values
+print(data.isnull().sum())
